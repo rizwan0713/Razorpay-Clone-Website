@@ -9,18 +9,73 @@
     <script src="https://unpkg.com/feather-icons"></script>
      <title>Razorpay</title>
 
-    <!-- google font -->
+    <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet" />
 
     <style> 
-        .corefeaturesection {
-            background-size: 100% 100%;
-            padding-top: 12rem;
-            padding-bottom: 12rem;
+    .featureCard:hover .featureCardIcon {
+     background-image: linear-gradient(30.55deg, #6ac7ff 11.05%, #148aff 90.09%);
+     box-shadow: 0px 2px 22px rgb(202 202 202 / 25%);
+      }
+      .featureCard:hover .featureCardSVG {
+     filter: drop-shadow(0px 2px 22px rgba(202, 202, 202, 0.25));
+     stroke-opacity: 0 !important;
+      }
+      .featureCard:hover .featureCardBox {
+       background-image: url('/assets/features-wave-06991790.svg');
+       background-repeat: no-repeat;
+       background-position: bottom 1rem right;
+     }
+     .featureCard2:hover .featureCardBox {
+       background-image: url('/assets/features2-wave-bb06068d.svg');
+       background-repeat: no-repeat;
+        background-position: bottom 1rem right;
+      }
+
+      .featureCard2:hover .featureCardSVG {
+        filter: drop-shadow(0px 2px 24px rgba(0, 0, 0, 0.4));
+         stroke-opacity: 0 !important;
+      }
+
+       .featureCard2:hover .featureCardIcon {
+        background-image: linear-gradient(188.57deg, #2095ff -16.05%, #6416ff 116.32%);
+        box-shadow: 0px 2px 24px rgb(0 0 0 / 40%);
+        transition: all 200ms ease-in-out;
+      }
+      .ctaBg {
+       background-size: 200% 100%;
+       }
+       .ctaSection {
+        min-height: 880px;
+       }
+       @media screen and (min-width: 1024px) {
+       .ctaBg {
+       background-size: 100% 100%;
+       }
+
+      .ctaSection {
+       min-height: 530px;
+      }  
+    } 
+      @media  screen and (min-width: 1000px) {
+       .corefeaturesection {
+       background-size: 100% 100%;
+       padding-top: 12rem;
+      padding-bottom: 12rem;
+      }
+      }
+     
+      @media  screen and (max-width: 500px) { 
+      .corefeaturesection {
+            background-size: 2000px 100%;
+            padding-top: 20rem;
+            padding-bottom: 20rem;
         }
+    }
+   
         .ctasection {
             background-size: 100% 100%;
        
@@ -40,7 +95,7 @@
         }
     </style>
     
-  <link rel="stylesheet" href="/assets/index-265bab7f.css">
+  <link rel="stylesheet" href="/assets/index-1614994b.css">
 </head>
 <body>
   
@@ -66,8 +121,8 @@
                  class="px-4 py-2 bg-[#2B84EA] rounded-md text-white ml-4 text-xs font-mullish font-bold cursor-pointer"> Know More</span></p>
         </div>
 
-        <div class="self-center font-mullish hidden sm:block lg:hidden  z-40">
-            <p>Automatic Payroll in Just 3 Clicks,  now!
+        <div class="self-center font-mullish md:block sm:block lg:hidden  z-40">
+            <p class="text-[13px] sm:text-[15px] sm:font-semibold">Automatic Payroll in Just 3 Clicks,  now!
                 <span class="px-4 py-2 bg-[#2B84EA] rounded-md text-white ml-4 text-xs font-mullish font-bold cursor-pointer">
                     Know More</span>
             </p>
@@ -93,7 +148,7 @@
                <img src="./images/logo.svg "
                 width="125px"
                  height="30px" 
-                 alt=""> 
+                 alt="Razorpay Logo"> 
             </a>
 
             <ul class="flex gap-5 ">
@@ -253,14 +308,14 @@
          width="233"
          height="167"
          
-         class="absolute -top-[8rem] left-[10rem] inline-block ">
+         class="absolute -top-[8rem] left-[10rem] hidden   md:block  ">
 
         <img src="data:image/png;base64,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"
          alt="" 
          loading="lazy"
           width="233"
          height="167"
-         class="absolute  right-0 top-[2rem] rotate-180 inline-block">
+         class="absolute  right-0 top-[2rem] rotate-180 hidden   md:block">
 
         <div class="relative mx-auto w-11/12 max-w-[1080px] pt-4  ">
 
@@ -279,7 +334,7 @@
         <div class="w-full bg-white flex rounded-md border min-h-[520px] relative py-12 p-10 " >
              <!-- left section --> 
              <div class=" flex flex-col justify-between  w-full ">
-             <h3 class="font-mullish text-[28px] leading-10 font-bold max-w-[400px ] w-[510px] ">
+             <h3 class="font-mullish text-[28px] leading-10 font-bold max-w-[400px ]  sm:w-[510px] w-[350px]  ">
                 Supercharge your business with the all-powerful
                 <span class="text-lightBlue"> Payment Gateway</span>
              </h3>
@@ -345,13 +400,13 @@
         </div>
         <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-14">
             <!-- box1-->
-            <div class="w-full min-h-[15rem] relative cursor-pointer  ">
+            <div class="w-full min-h-[15rem] relative cursor-pointer featureCard">
                 <img src="/assets/payment-link-icon-68c91ae5.svg" class="bg-lightBlue absolute right-3 top-3 w-12 h-12 rounded-full z-[8]
-                             transition-all duration-200">
+                             transition-all duration-200 featureCardIcon">
         
                 <!-- box shape -->
                 <svg viewBox="0 0 349.32501220703125 225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
-                    class="stroke-1 stroke-[#818597] h-full w-full absolute z-[9] transition-all duration-200  "
+                    class="stroke-1 stroke-[#818597] h-full w-full absolute z-[9] transition-all duration-200 featureCardSVG "
                     style="stroke-opacity: 0.15">
                     <path d="m 0 6 
                                          a 6 6 0 0 1 6 -6 
@@ -366,10 +421,10 @@
                                         z" fill="#fff"></path>
                 </svg>
                 <!-- box content -->
-                <div class="z-[120] absolute w-full h-full flex flex-col justify-between pl-5 py-6 pr-8  ">
+                <div class="z-[120] absolute w-full h-full flex flex-col justify-between pl-5 py-6 pr-8  featureCardBox">
                     <!-- text part -->
-                    <div>
-                        <h3 class="font-mullish font-bold text-deepBlueHead leading-[1.2] text-[1.375rem]">Payments Link</h3>
+                    <div class="">
+                        <h3 class="font-mullish font-bold text-deepBlueHead leading-[1.2] text-[1.375rem] ">Payments Link</h3>
                         <p class="font-mullish text-grayText mt-6">Share payment link via an email, SMS, messenger, chatbot etc.
                             and get paid immediately</p>
                     </div>
@@ -385,13 +440,13 @@
                 </div>
             </div>
             <!-- box2-->
-            <div class="w-full min-h-[15rem] relative cursor-pointer">
+            <div class="w-full min-h-[15rem] relative cursor-pointer featureCard">
                 <img src="/assets/payment-pages-icon-fc44ea1e.svg" class="bg-lightBlue absolute right-3 top-3 w-12 h-12 rounded-full z-[8]
-                                         transition-all duration-200">
+                                         transition-all duration-200 featureCardIcon">
         
                 <!-- box shape -->
                 <svg viewBox="0 0 349.32501220703125 225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
-                    class="stroke-1 stroke-[#818597] h-full w-full absolute z-[9] transition-all duration-200"
+                    class="stroke-1 stroke-[#818597] h-full w-full absolute z-[9] transition-all duration-200 featureCardSVG"
                     style="stroke-opacity: 0.15">
                     <path d="m 0 6 
                                                      a 6 6 0 0 1 6 -6 
@@ -406,7 +461,7 @@
                                                     z" fill="#fff"></path>
                 </svg>
                 <!-- box content -->
-                <div class="z-[120] absolute w-full h-full flex flex-col justify-between pl-5 py-6 pr-8">
+                <div class="z-[120] absolute w-full h-full flex flex-col justify-between pl-5 py-6 pr-8 featureCardBox">
                     <!-- text part -->
                     <div>
                         <h3 class="font-mullish font-bold text-deepBlueHead leading-[1.2] text-[1.375rem]">Payments Pages</h3>
@@ -424,13 +479,13 @@
                 </div>
             </div>
             <!-- box3-->
-            <div class="w-full min-h-[15rem] relative cursor-pointer">
+            <div class="w-full min-h-[15rem] relative cursor-pointer featureCard">
                 <img src="/assets/payment-buttons-icon-f0af1bfb.svg" class="bg-lightBlue absolute right-3 top-3 w-12 h-12 rounded-full z-[8]
-                                         transition-all duration-200">
+                                         transition-all duration-200 featureCardIcon">
         
                 <!-- box shape -->
                 <svg viewBox="0 0 349.32501220703125 225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
-                    class="stroke-1 stroke-[#818597] h-full w-full absolute z-[9] transition-all duration-200"
+                    class="stroke-1 stroke-[#818597] h-full w-full absolute z-[9] transition-all duration-200 featureCardSVG"
                     style="stroke-opacity: 0.15">
                     <path d="m 0 6 
                                                      a 6 6 0 0 1 6 -6 
@@ -445,7 +500,7 @@
                                                     z" fill="#fff"></path>
                 </svg>
                 <!-- box content -->
-                <div class="z-[120] absolute w-full h-full flex flex-col justify-between pl-5 py-6 pr-8">
+                <div class="z-[120] absolute w-full h-full flex flex-col justify-between pl-5 py-6 pr-8 featureCardBox">
                     <!-- text part -->
                     <div>
                         <h3 class="font-mullish font-bold text-deepBlueHead leading-[1.2] text-[1.375rem]">Payments Buttons</h3>
@@ -463,13 +518,13 @@
                 </div>
             </div>
             <!-- box4-->
-            <div class="w-full min-h-[15rem] relative cursor-pointer">
+            <div class="w-full min-h-[15rem] relative cursor-pointer featureCard">
                 <img src="/assets/subscriptions-icon-fe8aaffb.svg" class="bg-lightBlue absolute right-3 top-3 w-12 h-12 rounded-full z-[8]
-                                         transition-all duration-200">
+                                         transition-all duration-200 featureCardIcon">
         
                 <!-- box shape -->
                 <svg viewBox="0 0 349.32501220703125 225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
-                    class="stroke-1 stroke-[#818597] h-full w-full absolute z-[9] transition-all duration-200"
+                    class="stroke-1 stroke-[#818597] h-full w-full absolute z-[9] transition-all duration-200 featureCardSVG"
                     style="stroke-opacity: 0.15">
                     <path d="m 0 6 
                                                      a 6 6 0 0 1 6 -6 
@@ -484,7 +539,7 @@
                                                     z" fill="#fff"></path>
                 </svg>
                 <!-- box content -->
-                <div class="z-[120] absolute w-full h-full flex flex-col justify-between pl-5 py-6 pr-8">
+                <div class="z-[120] absolute w-full h-full flex flex-col justify-between pl-5 py-6 pr-8 featureCardBox">
                     <!-- text part -->
                     <div>
                         <h3 class="font-mullish font-bold text-deepBlueHead leading-[1.2] text-[1.375rem]">Subscriptions</h3>
@@ -502,13 +557,13 @@
                 </div>
             </div>
             <!-- box5-->
-            <div class="w-full min-h-[15rem] relative cursor-pointer">
+            <div class="w-full min-h-[15rem] relative cursor-pointer featureCard">
                 <img src="/assets/route-icon-eb5cf08e.svg" class="bg-lightBlue absolute right-3 top-3 w-12 h-12 rounded-full z-[8]
-                                         transition-all duration-200">
+                                         transition-all duration-200 featureCardIcon">
         
                 <!-- box shape -->
                 <svg viewBox="0 0 349.32501220703125 225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
-                    class="stroke-1 stroke-[#818597] h-full w-full absolute z-[9] transition-all duration-200"
+                    class="stroke-1 stroke-[#818597] h-full w-full absolute z-[9] transition-all duration-200 featureCardSVG"
                     style="stroke-opacity: 0.15">
                     <path d="m 0 6 
                                                      a 6 6 0 0 1 6 -6 
@@ -523,7 +578,7 @@
                                                     z" fill="#fff"></path>
                 </svg>
                 <!-- box content -->
-                <div class="z-[120] absolute w-full h-full flex flex-col justify-between pl-5 py-6 pr-8">
+                <div class="z-[120] absolute w-full h-full flex flex-col justify-between pl-5 py-6 pr-8 featureCardBox">
                     <!-- text part -->
                     <div>
                         <h3 class="font-mullish font-bold text-deepBlueHead leading-[1.2] text-[1.375rem]">Route</h3>
@@ -541,13 +596,13 @@
                 </div>
             </div>
             <!-- box6-->
-            <div class="w-full min-h-[15rem] relative cursor-pointer">
+            <div class="w-full min-h-[15rem] relative cursor-pointer featureCard">
                 <img src="/assets/smart-collect-icon-9dab0826.svg" class="bg-lightBlue absolute right-3 top-3 w-12 h-12 rounded-full z-[8]
-                                         transition-all duration-200">
+                                         transition-all duration-200 featureCardIcon">
         
                 <!-- box shape -->
                 <svg viewBox="0 0 349.32501220703125 225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
-                    class="stroke-1 stroke-[#818597] h-full w-full absolute z-[9] transition-all duration-200"
+                    class="stroke-1 stroke-[#818597] h-full w-full absolute z-[9] transition-all duration-200 featureCardSVG"
                     style="stroke-opacity: 0.15">
                     <path d="m 0 6 
                                                      a 6 6 0 0 1 6 -6 
@@ -562,7 +617,7 @@
                                                     z" fill="#fff"></path>
                 </svg>
                 <!-- box content -->
-                <div class="z-[120] absolute w-full h-full flex flex-col justify-between pl-5 py-6 pr-8">
+                <div class="z-[120] absolute w-full h-full flex flex-col justify-between pl-5 py-6 pr-8 featureCardBox">
                     <!-- text part -->
                     <div>
                         <h3 class="font-mullish font-bold text-deepBlueHead leading-[1.2] text-[1.375rem]">Smart Collect</h3>
@@ -598,7 +653,7 @@
             <div class="w-full min-h-[440px] flex  flex-col relative">
                 <img src="/assets/x-flame-1-12c499a3.png" 
                 loading="lazy"
-                class="absolute -top-[142px] -left-[140px] w-[200px] ">
+                class="absolute -top-[142px] -left-[140px] w-[200px]  ">
 
                 <img src="/assets/x-flame-2-9092ee28.png"
                  loading="lazy" 
@@ -609,8 +664,8 @@
                     
 
                     <!-- left part -->
-                    <div class=" flex flex-col justify-between items-start gap-12  ">
-                        <h3 class="font-mullish text-[28px] text-white font-bold w-[520px] leading-10 max-w-[500px]">Manage your company’s finances 
+                    <div class=" flex flex-col justify-between items-start gap-12  max-w-[400px]  sm:w-[520px] w-[350px]">
+                        <h3 class="font-mullish text-[28px] text-white font-bold  leading-10  ">Manage your company’s finances 
                             with  
                         <img src="/assets/razorpayX-dbf3ba53.svg" 
                         width="168px"
@@ -684,13 +739,14 @@
              <!-- Card Box -->
                 <div class="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 w-full gap-4 my-14   ">
                     <!-- box1 -->
-                    <div class="w-full min-h-[15rem] relative cursor-pointer ">
+                    <div class="w-full min-h-[15rem] relative cursor-pointer featureCard2">
                         <!-- box icon -->
                         <img src="/assets/current-icon-0df323eb.svg"
-                            class="bg-lightBlue absolute right-3 top-3 w-12 h-12 rounded-full z-[80] transition-all duration-200" />
+                            class="bg-lightBlue absolute right-3 top-3 w-12 h-12 rounded-full z-[80]
+                             transition-all duration-200 featureCardIcon" />
                         <!-- box shape -->
                         <svg viewBox="0 0 349.32501220703125 225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
-                            class="stroke-1 stroke-[#525a76] h-full w-full absolute z-[90]  transition-all duration-200  "
+                            class="stroke-1 stroke-[#525a76] h-full w-full absolute z-[90]  transition-all duration-200 featureCardSVG "
                             style="stroke-opacity: 0.8 ">
                             <path d="m 0 6 
                                           a 6 6 0 0 1 6 -6 
@@ -705,7 +761,7 @@
                                           z" fill="#181C2E"></path>
                         </svg>
                         <!-- box content -->
-                        <div class="z-[1000]  absolute h-full w-full pl-5 py-6 pr-8 flex flex-col justify-between hover:shadow-2xl duration-200 " >
+                        <div class="z-[1000]  absolute h-full w-full pl-5 py-6 pr-8 flex flex-col justify-between featureCardBox " >
                             <div>
                                 <h3 class="font-mullish font-extrabold text-white leading-[1.2] text-[1.375rem]">
                                     Current Account
@@ -722,13 +778,14 @@
                         </div>
                       </div>
                     <!-- box2 -->
-                        <div class="w-full min-h-[15rem] relative cursor-pointer ">
+                        <div class="w-full min-h-[15rem] relative cursor-pointer featureCard2">
                             <!-- box icon -->
                             <img src="/assets/capital-credit-icon-bf81bc54.svg"
-                                class="bg-lightBlue absolute right-3 top-3 w-12 h-12 rounded-full z-[80]  transition-all duration-200" />
+                                class="bg-lightBlue absolute right-3 top-3 w-12 h-12 rounded-full z-[80] 
+                                 transition-all duration-200 featureCardIcon" />
                             <!-- box shape -->
                             <svg viewBox="0 0 349.32501220703125 225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
-                                class="stroke-1 stroke-[#525a76] h-full w-full absolute z-[90]  transition-all duration-200"
+                                class="stroke-1 stroke-[#525a76] h-full w-full absolute z-[90]  transition-all duration-200 featureCardSVG"
                                 style="stroke-opacity: 0.8">
                                 <path d="m 0 6 
                                               a 6 6 0 0 1 6 -6 
@@ -743,7 +800,7 @@
                                               z" fill="#181C2E"></path>
                             </svg>
                             <!-- box content -->
-                            <div class="z-[1000] absolute h-full w-full pl-5 py-6 pr-8 flex flex-col justify-between hover:shadow-2xl duration-200">
+                            <div class="z-[1000] absolute h-full w-full pl-5 py-6 pr-8 flex flex-col justify-between featureCardBox">
                                 <div>
                                     <h3 class="font-mullish font-extrabold text-white leading-[1.2] text-[1.375rem]">
                                         Capital & Credit
@@ -759,13 +816,14 @@
                             </div>
                         </div>
                     <!-- box3 -->
-                        <div class="w-full min-h-[15rem] relative cursor-pointer ">
+                        <div class="w-full min-h-[15rem] relative cursor-pointer featureCard2 ">
                             <!-- box icon -->
                             <img src="/assets/payouts-icon-9807a999.svg"
-                                class="bg-lightBlue absolute right-3 top-3 w-12 h-12 rounded-full z-[80]  transition-all duration-200" />
+                                class="bg-lightBlue absolute right-3 top-3 w-12 h-12 rounded-full z-[80]  
+                                transition-all duration-200 featureCardIcon" />
                             <!-- box shape -->
                             <svg viewBox="0 0 349.32501220703125 225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
-                                class="stroke-1 stroke-[#525a76] h-full w-full absolute z-[90]  transition-all duration-200"
+                                class="stroke-1 stroke-[#525a76] h-full w-full absolute z-[90]  transition-all duration-200 featureCardSVG"
                                 style="stroke-opacity: 0.8">
                                 <path d="m 0 6 
                                               a 6 6 0 0 1 6 -6 
@@ -780,7 +838,7 @@
                                               z" fill="#181C2E"></path>
                             </svg>
                             <!-- box content -->
-                            <div class="z-[1000] absolute h-full w-full pl-5 py-6 pr-8 flex flex-col justify-between hover:shadow-2xl duration-200">
+                            <div class="z-[1000] absolute h-full w-full pl-5 py-6 pr-8 flex flex-col justify-between featureCardBox">
                                 <div>
                                     <h3 class="font-mullish font-extrabold text-white leading-[1.2] text-[1.375rem]">
                                     Payouts
@@ -835,10 +893,10 @@
         <div class="relative mx-auto w-11/12 max-w-[1080px] pt-4" >
             <img src="data:image/png;base64,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" 
             loading="lazy"
-            class="absolute w-[233px] -top-[5.5rem] left-[300px] -z-11">
+            class="absolute w-[233px] -top-[5.5rem] left-[300px] -z-11 hidden   md:block">
             <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOkAAACnCAMAAADDu4vNAAAAOVBMVEUAAADT5PnT5fjj4//S5PLS5PbS5Pja5/nY4vnT5/fR5PbV5frBzOXZ5/nR4/7T5PnP3/TS4vjV5vv5nSPYAAAAE3RSTlMATEIJEzkmHA4hKy8KFxw0MD49U7XcFQAAB5ZJREFUeNrt3ed22zAMBWDuKVqW3/9hO1ytACbIQnbTc3j/9euKIg/5RgTFzxgrpcpa7MHN/7THhRYRcz0Wv9iDsFk+48Qe22lxJ73a7WDLHyvQ1NHUHzOIhX4Lq/0+1Cwl+HJnxOxm+yEsm5XN1Gam0cJKut80ZfuherlHPHOVqdVc3exqCbF8mVkpwQmk7LafUnBS1cHMBbbBflKno02Iraf0bPKQu3iGsvSkiTKHWHyaRiwgZo52Y1g5HYGtHSk0TVlCzD0tIGYqRh29p03Br0zIRiPPX5/po5XXFigzTzNnS3KPh89kWZDnqWm0gJiu2IKYJExgBr+bSoiAvC6afnsgNiOWV/OIxX5LyGu5e2Hx8J6zxl1sCbHcbWKLRWwB33QxfbGowLWFcPKlPTQ0+05L0KbVxMHy02Zg+6NB+3m+m/V3d0stFi82x7D00kZGRkZGRkZGRl5n8t6828I/MnMwbffPPzULT3PQFGmmz24nWxBT0Api/mgBfgLa7VG3gthttRmxXDe3WkLMMU0r8MmZsrSZ7DaHWKxZQKwg5ne7IVaEiEhDkgkLiIlOmxGzjbYgpuq2nP9WQv4lh/xLsWKSsNuTJsoKYuZpGrFwtICaPGTua0Gnd7agsa8FLaRddqSp50hxC4y2uyCPB382e9Ej1TdaaX2k9pk+WkDNwT6VZQk12KDaj9sE3j1Ic2KNhKb7LSLmVwuImX4z+xvloVLELayWCZMVc7v5i83RpjO4KlstXmweXnE+MCvQrKEsIGaWL2ZMEHveZdNX0p+ykZGRkZGRkQvj092Ziy18sfjT9Fe73+MnrWy3FoA6azlafNrcaJljgjAnYXeZXpsTovOODr6JqqXVHnXLNbO72eOnDQ1uMeNZQMzvNiOWGs31mtstEj0gYTNilrAJ6/cqpi4ytBvsu8OO7gYnym6vLVBWsDvngIFukNEDEgZ6QNL43aDv7Ab5d73yu0H6nBbKDHnXsq+YIqz8MUmYAYb3gKHRNGoe/omjqdUcYeJNluudn220/PwlqJowWzaLSF/oG600mqmuJJA1U69sWmCnpjFTnRbbTN36LaxWEAuvzS9Sqr0/u8jCkab4y+5fTP20pI+mHWKZa+4gW332DUxfbiMjIyMjIyMXxqTHw940w8Tf2f3xmD9pDl5DilSx8BeWkf5xRsy2me60x29zyMrmVLVQtYzYvJmGn41Uv6nNRM30wdpX8Pl+s70WEXN1y6slxPKp1shI5zAzVmUujaYIm4jOr3NVpmzujGhjrLSlOqP+ldLQDGP1NKsbDP+2G7wzzp/jroiHBnvAitHd4Ez2gNAKafTz9NzvQdOvbfoba1kpzX89jsDI19QZsdxr+WwJnBbc8mYGsYCsbNZVW9pswkz9nTnQvdWvkUzdpvzHQrP1X/ssiKmnPRCzf0znRVknDsHN9FiENn+xgtkMzb8y32hFjIyMjIyM0OH3SMo6DQx2RgravcfEdTYr0EuVWYEeye8Gr4dog/2QQSwgnVHgdEbMayn8upfRLc2IWcSWzTRqsB+qmiZ7JENM0vtkj+QOxpjWlxFLQszkxD1+j6S4PdJudGcEjT+FT3Cm8H26Ryr/VY/kOFP4WN3gO3skz+iRzJU9Ev+5S/VIjG5JcHqk67slspvnWzqb634/De2T9Pjd0nRZt4T/rM0RnVHnz9qmVOmRNGmwH7KvzdZ6pGTVvHdBu8UvltvMcM0jfVOBdi+wM7obYMt9TOEbGRkZGRkZGakmmPCPTDeZYZnY4uD0OpGg6dxolmuPk4XXZuAEPxsQ0+eqcEbWt2TE0m5Bdpqr241hEbNTqwFmIeGmd3OIxW6T3VYQMzUzJ/NI8xGRDtghlt9ojPlWdjV1MHzi3kLMMSMMdMWSsOtnlsEWbTp3g998Ct+NsPYpfJa1ppg/he+d9w0WoYh14o5aE05P5psoK9wZkriF11P4DDldj7YZMUsaf+Legpg62QR6Utx03VLNAjJrwfRbrE3cK4j5s4W9E+2e1et7ze4Wsfm9veZajZjJrM62INP6FLSAmEGsKDitz7/ZdPEeXGgXX4D5vzeDm/mAjbp3ZGRkZGTk0pjoiv5GJlDjJ1g4Dc9gtjwNXOXhligrT3Mnk9DibrwUcIWP220zAe2xm7vCMmq8aNU9cW9GLL3rk5zfLQpOztP1GDZ9YjcOTugpfIzdODg7dNzQ1oSRb7tDB2bxWxzpflTvnMLHiT39j9AiNXGvf4cOaM3NNifx0h068El6qdFmqgfkBfnJ0sQ2elqflv121RtqbrTUP5kvtJqEVnbjZkoK7pSRf5nFrCBm/s5kr/ETzAQtYCa+jY2MjIyMjIz8o8S7TTfECsNMgzloGrEAjPdpRukPW3qaRWxGLGvBjJNrQpsp3W2p0fJmAjNetNyiEHvUdt4wiPlrLCOWPtMNzkdjrMoMu/VP3GNFXbvSVjCm8Gl69TQj/+MOHX+Xb7FDR9ztQ92gZ1hp3KHDEEbsxsGIQXbe8IQR0/XeZVbwMiNPA7uZb7Sy2ULsvAGtfQU0L1OGz/dpRsw+SR1ML5h17rxREDOIBcGOt0qqFBDTF5qUymEmaFtW4+QHdW+CRelCpzcAAAAASUVORK5CYII="
             loading="lazy"
-            class="absolute w-[233px] -top-[6rem] -right-[3.5rem] -z-11" >
+            class="absolute w-[233px] -top-[6rem] -right-[3.5rem] -z-11 hidden   md:block" >
              <div class=" relative w-full gap-y-10 gap-x-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-rows-2 z-10">
                 <!-- Item1 -->
                 <div class=" relative flex  items-center -z-[100]">
@@ -951,7 +1009,7 @@
 
     <!-- Core Feature -->
      <section class="w-full bg-[url(/images/core-features-sectionBg.svg)] 
-    bg-no-repeat bg-cover bg-center mt-14 relative  corefeaturesection">
+    bg-no-repeat bg-cover bg-center mt-6 md:mt-14 relative  corefeaturesection">
         <div class="relative mx-auto w-11/12 max-w-[1080px] pt-4">
             <h2 class="font-mullish font-bold text-2xl text-center text-white"> Features</h2>
             <div class="h-1 w-6 bg-greenLight mx-auto mt-3 mb-5 "></div>
@@ -1016,7 +1074,7 @@
      <section class="relative bg-[#f5f8fb] pt-40 pb-12 -mt-[200px] -z-[50] ">
         <div class="relative mx-auto w-11/12 max-w-[1080px]  flex md:flex-row flex-col ">
             <!-- left part -->
-            <div class="flex flex-col justify-center w-full md:max-w-[calc(100%-500px)] sm:my-16">
+            <div class="flex flex-col justify-center w-full md:max-w-[calc(100%-500px)] sm:my-16 pb-12">
                 <h3 class="font-mullish font-bold text-2xl text-deepBlue ">Join the 50,00,000 businesses using Razorpay</h3>
                 <div class="h-1 w-6 bg-greenLight  my-4 mb-10"></div>
                 <p class="font-mullish opacity-80">We make it easier for you to focus on building great products while we work on simplifying your payments. Become one of
@@ -1034,14 +1092,14 @@
 
             </div>
             <!-- Right Part -->
-            <div class="relative  overflow-y-hidden w-[500px] h-[500px] mx-auto">
+            <div class="relative  overflow-y-hidden w-[500px] h-[500px] mx-auto  ">
                 <div style="background: linear-gradient(180deg,#f4f8ff,#fff0);"
                 class="absolute w-full h-[150px] top-0 z-50" ></div>
 
                 <img src="/assets/comanies-f772fc25.png" alt=""
-                class="companiesList absolute object-cover w-[500px] h-[600px] ">
+                class="companiesList absolute object-cover w-[310px] sm:w-[500px] h-[600px] ">
                     <div style="background: linear-gradient(0deg,#f4f8ff,#fff0);"
-                     class="absolute w-full h-[200px] bottom-0 z-20"></div>
+                     class="absolute w-full h-[200px] bottom-0 z-20 "></div>
             </div>
         </div>
      </section>
@@ -1052,7 +1110,7 @@
         <div class="mx-auto w-11/12 max-w-[1300px] relative py-20">
             <img src="data:image/png;base64,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" 
             loading="lazy"
-            class="absolute w-[200px] top-[8rem] left-[2rem] -z-10 ">
+            class="absolute w-[200px] top-[8rem] left-[2rem] -z-10 hidden sm:block">
             
             <h2 class="font-mullish font-bold text-2xl text-[#02042A] text-center">
                 An Experience <br>
@@ -1061,18 +1119,18 @@
             <div class="h-1 w-6 bg-greenLight mx-auto my-4  "></div>
             
             <!-- Left Button -->
-            <button class="h-[100px] w-[100px] bg-[#F4F8FF] rounded-full absolute left-0 top-1/2 rotate-180
+            <button class="sm:h-[100px] sm:w-[100px] h-[50px] w-[50px] bg-[#F4F8FF] rounded-full absolute left-[-10px] top-[48%] sm:left-0 sm:top-1/2 rotate-180
             flex  justify-center items-center">
-                <div class="h-16 w-16  bg-[#F4F8FF]  flex  justify-center items-center rounded-full mix-blend-multiply ">
+                <div class="sm:h-16 sm:w-16  w-8 h-8 bg-[#F4F8FF]  flex  justify-center items-center rounded-full mix-blend-multiply ">
                 <i data-feather="chevron-right" class="stroke-[5px] 
                 w-6 h-6 md:w-10 md:h-10 text-gray-400 "  ></i>
                 </div>
             </button>
 
             <!-- Right Button -->
-           <button class="h-[100px] w-[100px] bg-[#F4F8FF] rounded-full absolute right-0 top-1/2 
+           <button class="sm:h-[100px] sm:w-[100px] h-[50px] w-[50px] bg-[#F4F8FF] rounded-full absolute right-[-10px] top-[48%] sm:right-0 sm:top-1/2 
                     flex  justify-center items-center">
-            <div class="h-16 w-16  bg-[#F4F8FF]  flex  justify-center items-center rounded-full mix-blend-multiply ">
+            <div class="sm:h-16 sm:w-16  w-8 h-8  bg-[#F4F8FF]  flex  justify-center items-center rounded-full mix-blend-multiply ">
                 <i data-feather="chevron-right" class="stroke-[5px] 
                         w-6 h-6 md:w-10 md:h-10 text-gray-400 "></i>
             </div>
@@ -1083,17 +1141,39 @@
                 <!-- Left Image -->
                 <img src="/assets/testimonial-5d1d25a1.jpg" 
                 loading="lazy"
-                class="rounded-xl w-[320px] h-[320px]">
+                class="rounded-xl sm:w-[320px] sm:h-[320px] w-[260px] h-[260px]">
 
                 <!-- Right part -->
-                <div class="max-w-[400px] flex flex-col sm:gap-y-2  ">
+
+                <!-- small screens -->
+                <div class="xl:hidden flex flex-col mt-4 mr-32  min-w-[400px] mx-auto">
+                    
+                        <p class="font-mullish font-extrabold text-2xl text-center  mr-[40%]   ">
+                            Lorem Epsom
+                        </p>
+                        <p class="font-mullish font-medium text-center my-2 mr-[40%]">
+                            CEO, XYZ Engineering Company
+                        </p>
+                        <img src="/assets/fake-company-logo-6fa447e4.png" width="80" height="40" class="object-cover left-[50%] " />
+                        <img src="/assets/quotes-38b97044.svg" class="w-[35px] h-[40px] -mb-2" />
+                        <p class="font-mullish text-3xl font-extralight max-w-[300px]">
+                            Readymade Closed Wallet Solution For Quick Refunds
+                        </p>
+                        <button class="italic underline text-sm text-grayText">
+                            Learn More
+                        </button>
+                   
+                </div>
+                
+                <!-- large Screen -->
+                <div class="max-w-[400px]  flex-col extraSm:gap-y-2 hidden xl:block ">
                     <img src="/assets/quotes-38b97044.svg" 
                     loading="lazy"
                     class="w-[35px] h-[40px] -mb-2 xl:order-1">
-                    <p class="font-mullish text-3xl  font-extralight xl:order-1">Readymade Closed Wallet <br>Solution For Quick Refunds</p>
+                    <p class="font-mullish text-3xl  font-extralight  ">  Readymade Closed Wallet <br>Solution For Quick Refunds</p>
                     <a href="#" class="text-grayText underline italic xl:order-1">Learn More</a>
                     <p class="font-mullish text-2xl font-extrabold -order-1 xl:order-1  ">Lorem Ipsum</p>
-                    <p class="font-mullish font-medium order-1 md:-order-1 xl:order-1">CEO, XYZ Engineering Company</p>
+                    <p class="font-mullish font-medium order-1 md:-order-1 xl:order-1 ">CEO, XYZ Engineering Company</p>
                     <img src="/assets/fake-company-logo-6fa447e4.png" loading="lazy"
                     class="w-[80px] h-[40px]  xl:order-1 md:-order-1">
                 </div>
@@ -1123,59 +1203,54 @@
 
      </section>
 
-     <!-- CTA -->
-     <section class="bg-[url(/images/CTABg.svg)] w-full  relative bg-no-repeat bg-cover ctasection min-h-[510px] z-10">
-        <!-- Main Content Box -->
-        <div class="flex flex-row relative items-center pt-16 justify-between max-w-[1080px] mx-auto w-11/12 space-x-20 ">
-            <!-- Left Part -->
-            <div class="flex flex-col gap-5 mt-12 max-w-[600px]">
-                <h2 class="text-white font-mullish font-bold text-2xl pt-3 ">Supercharge your business with Razorpay</h2>
-                <div class="w-6 h-1  bg-greenLight"></div>
-                <p class="font-mullish text-white">Sign up now to experience the future of payments and offer <br>
-                     your customers the best checkout experience.</p>
-                <ul class="flex flex-row flex-wrap gap-x-11 gap-y-3  text-white ">
-
-                    <li class="font-mullish text-white flex">
+     <!-- CTA Section-->
+    <section class=" relative flex items-center z-[100] ctaSection">
+        <!-- background Image -->
+        <div class="bg-[url(/images/CTABg.svg)]  bg-center w-full h-full absolute -z-[1] ctaBg">
+        </div>
+        <!-- Content Box -->
+        <div
+            class="w-10/12 my-10 md:my-0 md:w-11/12 max-w-[1080px] h-full mx-auto relative flex items-center space-x-20 justify-between">
+            <div>
+                <h2 class="font-mullish font-extrabold text-2xl text-left text-white">
+                    Supercharge your business with Razorpay
+                </h2>
+                <div class="w-6 h-1 bg-greenLight my-4"></div>
+                <p class="font-mullish text-white max-w-[440px]">
+                    Sign up now to experience the future of payments and offer your
+                    customers the best checkout experience.
+                </p>
+                <ul class="space-y-2 flex flex-wrap text-white my-8">
+                    <li class="font-mullish flex items-center gap-x-2 mr-12">
                         <i data-feather="check" class="text-greenLight"></i>
                         <span>Quick Onboarding</span>
                     </li>
-
-                    <li  class="font-mullish text-white flex">
+                    <li class="font-mullish flex items-center gap-x-2 mr-12">
                         <i data-feather="check" class="text-greenLight"></i>
-                        <span>Access to entire product suite</span>
+                        <span>Access to entire product suite </span>
                     </li>
-
-                    <li  class="font-mullish text-white flex">
+                    <li class="font-mullish flex items-center gap-x-2 mr-12">
                         <i data-feather="check" class="text-greenLight"></i>
                         <span>API access</span>
                     </li>
-
-                    <li  class="font-mullish text-white flex">
+                    <li class="font-mullish flex items-center gap-x-2 mr-12">
                         <i data-feather="check" class="text-greenLight"></i>
                         <span>24x7 support</span>
                     </li>
-
                 </ul>
-
-                <button class="min-w-[32px] font-mullish text-sm font-bold bg-white text-lightBlue300 place-self-start
-                flex rounded-sm items-center hover:text-lightBlue500 transition-all duration-200 py-3 px-4">
-                    Sign Up Now
+                <button
+                    class="py-3 px-4 min-w-[32px] font-mullish text-sm font-bold bg-white text-lightBlue300 border flex rounded-sm items-center hover:text-lightBlue500 transition-all duration-200">
+                    Sign Up
                     <svg viewBox="0 0 24 24" focusable="false" class="w-[14px] h-[14px] ml-3">
                         <path fill="currentColor" d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
                     </svg>
-
                 </button>
-               
             </div>
-
-            <!-- right part -->
-            <img src="/assets/ctaImg-e340b144.svg" loading="lazy "
-            width="240px" height="282px"
-            class="mt-16 pt-3 hidden lg:block">
-
-       
+            <!-- Laptop Image -->
+            <img src="/assets/ctaImg-e340b144.svg" width="240px" height="282px" loading="lazy" class="hidden lg:block" />
         </div>
-     </section>
+    </section>
+ 
 
      <!-- Footer -->
      <section class=" bg-[#EDF7FF]   -mt-[400px]">

@@ -3,6 +3,9 @@ module.exports = {
   content: ["*"],
   theme: {
     extend: {
+      screens:{
+        'extraSm': '350px',
+      },
       fontFamily: {
         mullish: ["Mulish", "sans-serif"],
       },
